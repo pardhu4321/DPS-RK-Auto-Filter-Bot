@@ -242,21 +242,20 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     CAPTION = """ 📂 <i><a href="https://t.me/DPS_Movies">{file_name}</a></i>\n\n"""
 
     IMDB_TEMPLATE_TXT = """
-<b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
+<b>Query: {qurey}
 
-🧿 {title}</b>
+IMDb Data:
 
-<b>⭐ {rating} | ⏰ {runtime} Minutes
-📆 {release_date}
-🕵️ {director}
+<b>🏷 Title</b>: <a href={url}>{title}</a>
+🎭 Genres: {genres}
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+📀 RunTime: {runtime} Minutes
+📆 Release Info : {release_date}
 
-●  {languages}
-●  {genres}
 
-📖 {plot}
-
-💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>
-"""
+⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
+</b>"""
     
 
     RESTART_TXT = """
